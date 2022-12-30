@@ -1,0 +1,19 @@
+============ Introduction to js ============
+javascript is a programming language for web. it is a object oriented scripting language that add behavious in web pages. it is a also known as client side programming language to create dynamic and interactive web content like applications and browsers.
+
+========== How to Execute javascript ==========
+Create a javascript file with .js extension 
+and add script src in index.html within body tag file like
+    <script src="file1.js"></script>
+then open your index file with live server 
+
+========== Comments in js =========
+//single line comments
+/* mulitline
+comments 
+*/
+
+========== Use Strict in js =========
+
+
+The "use strict" directive was new in ECMAScript version 5. It is not a statement, but a literal expression, ignored by earlier versions of JavaScript. The purpose of "use strict" is to indicate that the code should be executed in "strict mode". With strict mode, you can not, for example, use undeclared variables.
