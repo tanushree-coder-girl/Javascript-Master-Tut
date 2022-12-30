@@ -1,0 +1,66 @@
+What are these ? 
+
+Ecmascript 
+javascript
+ES5 
+ES6 
+ES7 
+ES 2015
+ES 2016
+ES 2017
+ES 2018 
+
+
+History of javascript :-
+
+In 1995, there is a popular web browser named as Netscape Navigator (1995)
+Netscape navigator realized that there should be a simple programming language for adding more interaction in web pages. so with the help of this we can add more interactions in webpages. 
+
+so Brendan Eich ( developer in Netscape Navigator ) build javascript in 1995.
+He created javascript within 10 days. and Names this language as Mocha and later changed name as live script.
+but its doesn't gaining popularity. So at the same time a java is programming language which was so popular. 
+So they changed the live script name as javascript for marketing purpose. 
+
+Note: there is nothing similarities between JavaScript and Java. JavaScript
+
+Internet Explorer is so popular at that time. so in 1996 I.E realized that Netscape navigator is becoming so popular because of javascript so we should also do something like this. 
+so they copy some javascript features and adding some own features itself and created a new scripting language named as JScript. 
+
+So now internet Explorer has: JScript and Netscape Navigator has JavaScript 
+So in 1996 there is javascript and JScript 
+This is problematic for developers. 
+
+So they take javascript to Ecma
+Ecma is International organisation who standarized different technologies. 
+Standardization of information and communication technology and consumer electronics
+
+Ecma decides how a technology should work.  how tech should behaves what features should to be have in it. 
+
+Ecma 262 is a documentation in which ecma specify , how a scripting language should work in browser. All browsers must have to implements this features.
+So they called it Ecmascript 
+
+Ecma standarized javascript. 
+
+
+So Now in 1997 : Ecma launches ES1 
+        in 2009 : ES5 launches which is so benefical  
+        in 2015 : ES6 launches . which was so popular, its the greated update in js History. gaining much more popularity . it should also called modern javascript 
+
+        Ecma has a community TC 39 / (technical community 39 ) so they decided to annual realized of javascript.
+        So they decided to realized annually 
+
+        as name described 
+        ES-2015 or ES6
+        ES-2016 or ES7
+        ES-2017 or ES8
+
+        Now Official Name : ES2016 
+
+JavaScript is backwards compatible. It means that features who comes in 20 years ago still works in javascript
+
+JavaScript is not forward compatible. It means that features which realized latest cannot work in old browser which is not updated. 
+
+Babel is a javascript compiler
+So we have a tools like babel that will convert our modern javascript (ES6) to javascript (before ES5)
+
+======================================================================================================
