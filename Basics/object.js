@@ -97,3 +97,26 @@ console.log(Array.isArray(Object.keys(employee_data)));
 for(let key of Object.keys(employee_data)){
     console.log(key, ":", employee_data[key])
 }
+
+
+//Object destructing 
+const cartoon = {
+    program_name: 'shin-chan',
+    channel: 'hungama',
+    year_of_release: '2001',
+    story: 'a five year naughty kid story'
+}
+
+// let program_name = cartoon.program_name;
+// let channel = cartoon.channel;
+// console.log(program_name, channel);
+
+// Destruting 
+// let { program_name, channel } = cartoon
+let { program_name: name, channel: on } = cartoon           // IF WE want to declare variable with another name then use this : 
+console.log(name, on)
+
+let { program_name, channel, ...rest } = cartoon  //we can use ... rest props or params for return remaining params in a object
+
+console.log(program_name, channel);
+console.log(rest)
