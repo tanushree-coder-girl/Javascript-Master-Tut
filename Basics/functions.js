@@ -129,3 +129,40 @@ console.log(todayTemp(40))
 // if we have only 1 parameter then also we can remove () paranthesis like this
 const temp = temp => `today temp is ${temp} celcius`;
 console.log(temp(24))
+
+
+// Function default parameters 
+
+// function addition (a , b){
+//     console.log(typeof b)       // before es6 this is how we handle this 
+//     if(b === undefined){
+//         b = 0;
+//     }
+//     return a + b
+// }
+
+// console.log(addition (2));
+
+function addition (a , b = 0){   // default parameter 
+    return a + b
+}
+
+console.log(addition (2));
+
+
+// Rest parameters 
+
+//The rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent variadic functions in JavaScript
+
+const addAll = (...rest) => {
+    console.log(rest)
+    let total = 0;
+    for (let index = 0; index < rest.length; index++) {
+        const element = rest[index];
+        console.log(element)
+        total += element
+    }
+    return total;
+}
+
+console.log(addAll(2,3,4,5,7,8,9))
