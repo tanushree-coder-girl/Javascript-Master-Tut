@@ -46,3 +46,27 @@ user2BindDetailsFunc();  // output => jessy 11 bind user2
 
 
 //Summary.=>  call : binds the this value, invokes the function, and allows you to pass a list of arguments. apply : binds the this value, invokes the function, and allows you to pass arguments as an array. bind : binds the this value, returns a new function, and allows you to pass in a list of arguments.
+
+
+// Don't do this mistake 
+// const objUser = {
+//     name: 'tanu',
+//     printName: function(){
+//         console.log(this)
+//         console.log(this.name)
+//     }
+// }
+// const returnedFun = objUser.printName; // if we do it then it does not take this as objUser bcoz it does not call the function 
+// returnedFun();
+
+
+// Correct Way
+const objUser = {
+    name: 'tanu',
+    printName: function(){
+        console.log(this)
+        console.log(this.name)
+    }
+}
+const returnedFun = objUser.printName.bind(objUser); 
+returnedFun();
