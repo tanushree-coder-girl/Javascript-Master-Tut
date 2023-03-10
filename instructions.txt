@@ -1,5 +1,5 @@
 ============ Introduction to js ============
-javascript is a programming language for web. it is a object oriented scripting language that add behavious in web pages. it is a also known as client side programming language to create dynamic and interactive web content like applications and browsers.
+javascript is a programming language for web. it is a object based or function oriented scripting language that add behavious in web pages. it is a also known as client side programming language to create dynamic and interactive web content like applications and browsers.
 
 ========== How to Execute javascript ==========
 Create a javascript file with .js extension 
