@@ -8,28 +8,28 @@
 
 // Function can return function like this 
 
-function outerFun (){
-    return function(){
-        console.log('hello world')
+function outerFun (){                           
+    return function(){  
+        console.log('hello world')  
     }
 }
 
-let returnedFun = outerFun()
-returnedFun()
+let returnedFun = outerFun()                    
+returnedFun()                                   
 
 
 
 //////////////////////////////////////////////////
 // closures example - 1 
 
-function printName (fname, lname) {
-    return ()=> {
-        console.log(fname, lname)
+function printName (fname, lname) {             // line-1
+    return ()=> {                       // 1. 
+        console.log(fname, lname)  //(1)
     }
 }
 
-const returnedVal = printName("Tanu", "Ahir")
-returnedVal();
+const returnedVal = printName("Tanu", "Ahir")   // line-2
+returnedVal();                                  // line-3 
 // output is : Tanu Ahir
 
 // let's analyze the code 

@@ -25,11 +25,11 @@
 // Call Stack 
 // A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.21-Feb-2023
 
-console.log(this) 
-console.log(window)
-console.log(firstName) // undefined
-var firstName = "Tanu";
-console.log(firstName) // tanu
+console.log(this)   /// line -1 
+console.log(window)   // line -2 
+console.log(firstName) // undefined // line -3 
+var firstName = "Tanu";    // line -4 
+console.log(firstName) // tanu   // line -5
 
 
 // The output of this code is 

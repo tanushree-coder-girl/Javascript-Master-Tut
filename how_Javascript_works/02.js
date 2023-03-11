@@ -1,17 +1,17 @@
-console.log(this)
-console.log(window)
-console.log(myFunction) 
-console.log(fullname)
+console.log(this)     // line -1 
+console.log(window)     // line -2 
+console.log(myFunction)     // line -3 
+console.log(fullname)   // line -4 
 
-function myFunction(){
+function myFunction(){     // line -5 
     console.log('hello')
 }
 
-var firstName = 'tanu'
-var lastName = 'ahir'
+var firstName = 'tanu'      // line -6 
+var lastName = 'ahir'      // line -7 
 
-var fullname = `${firstName} ${lastName}`
-console.log(fullname)
+var fullname = `${firstName} ${lastName}`  // line -8
+console.log(fullname)    // line -9
 
 // output
 
@@ -58,9 +58,9 @@ console.log(fullname)
 // }
 // so this function is already exists in our memory 
 // line -6 var firstName = 'tanu' => we have this varaible in global memory now we have to replace it value from undefined to tanu
-// line -6 var lastname = 'ahir' => we have this varaible in global memory now we have to replace it value from undefined to ahir
-// line -6 var fullname = 'firstname + lastname' => we have this varaible in global memory now we have to replace it value from undefined to firstname + lastname which is present in global memory 
-// line - 7 console.log(fullname) => tanu ahir 
+// line -7 var lastname = 'ahir' => we have this varaible in global memory now we have to replace it value from undefined to ahir
+// line -8 var fullname = 'firstname + lastname' => we have this varaible in global memory now we have to replace it value from undefined to firstname + lastname which is present in global memory 
+// line - 9 console.log(fullname) => tanu ahir 
 
 // so the output the the following code is 
 // window obj

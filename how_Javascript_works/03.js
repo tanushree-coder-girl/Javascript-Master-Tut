@@ -1,10 +1,10 @@
 ///What happens to function expression  
-console.log(myFun);
-var myFun =  function () {
+console.log(myFun);  // line-1
+var myFun =  function () {   // line -2
     console.log('hello')
 }
 
-console.log(myFun);
+console.log(myFun);   // line 3 
 
 
 // lets understand the code 

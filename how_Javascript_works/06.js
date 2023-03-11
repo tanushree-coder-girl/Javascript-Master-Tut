@@ -2,21 +2,21 @@
 
 //There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
 
-let foo = "foo";
-console.log(foo);
+let foo = "foo";                                            //line1
+console.log(foo);                                           //line2
 
-function getFullName (firstname, lastname){
-    console.log(arguments);
+function getFullName (firstname, lastname){                 // line3
+    console.log(arguments);             //1.
     // console.log(arguments.length);
 
-    let myVar = "Inside function"
-    console.log(myVar)
-    const fullname = firstname + " " + lastname
-    return fullname;
+    let myVar = "Inside function"       //2.
+    console.log(myVar)                  //3.
+    const fullname = firstname + " " + lastname //4.
+    return fullname;                 //5.
 }
 
-const personName  = getFullName('tanu', 'ahir')
-console.log(personName)
+const personName  = getFullName('tanu', 'ahir')             //line4
+console.log(personName)                                     //line5
 
 //output 
 // foo
@@ -46,7 +46,6 @@ console.log(personName)
 // line - 2  - print on console foo 
 // line - 3 getFullName function which is present in global memory 
 // line - 4 
-
 //const personName  = getFullName('tanu', 'ahir')
 // this line will create a function execution context bcoz in this line we call  a function so it will create a function execution context 
 

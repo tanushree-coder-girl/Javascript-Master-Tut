@@ -1,8 +1,8 @@
-console.log('hello world')
-let fname = "Tanu"
-let lname = "Ahir"
+console.log('hello world')  // line=1. 
+let fname = "Tanu"   //line-2.
+let lname = "Ahir"   //line=3. 
 
-const myFunction = () => {
+const myFunction = () => {     // line-4
     let var1 = "first function variable";
     let var2 = "second function variable"
     console.log(var1, var2)

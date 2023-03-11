@@ -1,16 +1,16 @@
 // Closure example - 2 
 
-function hello (x){
-    const a = 'val1';
-    const b = 'val2';
+function hello (x){                            //line-1
+    const a = 'val1';       //1.
+    const b = 'val2';       //2.
 
-    return () => {
-        console.log(a, b, x)
+    return () => {          //3.
+        console.log(a, b, x)             // {1.}
     }
 }
 
-const retufu = hello("hey")
-retufu();
+const retufu = hello("hey")                 // line-2
+retufu();                                   // line-3
 
 // output is : val1 val2 hey
 
@@ -57,7 +57,8 @@ retufu();
         // it will create a function execution context 
                 // FEC - retufu 
                 // local memory => arguments 
-                // code execution phase => print a ,b ,x 
+                // code execution phase => 
+                //line-1 print a ,b ,x 
                 // a , b, x function jb return hua tb apne sath leke return hua tha 
                 
 

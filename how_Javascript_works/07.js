@@ -11,13 +11,13 @@
 
 // The scope chain is a way to link or provide a systematic access to all variables and other functions that the current execution context (function in this case) has access to
 
-const lastname = "Ahir";
+const lastname = "Ahir";                        // line -1 
 
-const printName = function(firstname){
-    console.log(firstname + " " + lastname)
+const printName = function(firstname){         // line -2 
+    console.log(firstname + " " + lastname)//1.
 }
 
-printName("Tanu");
+printName("Tanu");                             // line -3 
 
 // output is Tanu Ahir
 

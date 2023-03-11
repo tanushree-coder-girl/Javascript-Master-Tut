@@ -1,16 +1,16 @@
 // One more example of lexical scoping 
 
-const lastname = "Ahir";
+const lastname = "Ahir";                        //line-1
 
-const printName = () => {
-    const firstname = "tanu";
-    function innerFun (){
-        console.log(firstname, lastname)
+const printName = () => {                       //line-2
+    const firstname = "tanu";  // 1.
+    function innerFun (){     // 2.
+        console.log(firstname, lastname)   // first line of innerFun
     }
-    innerFun();
+    innerFun();             //3.
 }
 
-printName()
+printName()                                     // line-3
 
 // output : tanu Ahir
 
