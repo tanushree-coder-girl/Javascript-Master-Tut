@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<!-- The browser parses HTML into a DOM tree. HTML parsing involves tokenization and tree construction. HTML tokens include start and end tags, as well as attribute names and values. If the document is well-formed, parsing it is straightforward and faster -->
+
+    <!-- Browser parse line by one so  -->
+
+    <!-- so when we add script tag inside head tag then at this point browser starts parse this file then execute this js file so till now our html page is not loaded completely bcoz html parsing stop on this line and start parsing and execute js file so all rest line of html page is not loaded yet so there is possibility of getting error while js file execute bcoz it didn't find elements in dom bcoz html not loaded yet completely -->
+    <!-- 1-st way = wrong way -->
+    <script src="01.js"></script>
+
+
+    <!-- 3rd way - using async keyword -->
+    <!-- async so async keyword means asynchronously it means that browser didn't stop parsing html file but it will do both work together it will parse html code and at the same time it will also parse javascript file without blocking html code once javascript file is parsed completely then it will stops parsing html file and start executing javascript file  -->
+    <!-- so it is also not good practice bcoz it stops parsing html file when js file is parsed completely and start executing so possibility is half html file is loaded and js completely parsed so starts executing -->
+    <script src="01.js" async></script>
+
+
+    <!-- 4th way - best way using defer keyword -->
+
+    <!-- The defer attribute is a boolean attribute. If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing -->
+    <!-- Defer means your script will only execute after the page has finished loading. -->
+    <!-- Deferred scripts are guaranteed to run after the page has been loaded and parsed, so they can't slow down the initial page load. Since deferred scripts are not parsed until after the page has loaded, they can't block the parsing of other elements on the page (such as images). -->
+    <script src="01.js" defer></script>
+
+    
+
+</head>
+<body>
+    <h1> Async And Defer </h1>
+
+
+    <!-- 2nd way -->
+    <!-- As we know that HTML is loaded and executed line by line. So, when the browser encounters a <script> tag, it loads and executes the javascript code on the spot. This may slow down the page rendering speed and thus webpage will take more time to load -->
+    <script src="01.js"></script>
+</body>
+</html>
