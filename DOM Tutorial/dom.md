@@ -73,7 +73,7 @@ In this code
     /n    title  /n  script  /n              ||
             ||                               ||
         Dom Traversing                       ||
-                                    /n   h1     /n    p
+                                    /n   h1     /n    p    /n
                                          ||          ||
                                       Header       Paragraph
 
@@ -100,7 +100,7 @@ title has a text node => dom traversing
 
 Body has 3 childs /n , div, /n 
 
-div has 4 childs /n , h1, /n , p
+div has 5 childs /n , h1, /n , p, /n
 
 h1 has a text node => Header
 
