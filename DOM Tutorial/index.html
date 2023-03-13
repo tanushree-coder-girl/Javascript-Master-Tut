@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="./getElement.js" defer></script> -->
+    <!-- <script src="./textContent.js" defer></script> -->
+    <script src="./changeStyle.js" defer></script>
+    <!-- <script src="./get&setAttributes.js" defer></script> -->
+    <!-- <script src="./NodelistVSHtmlcollection.js" defer></script> -->
+
+</head>
+<body>
+    <header class="headerPart">
+        <nav>
+            <div class="logo"> Webpage </div>
+            <ul>
+                <li class="navItem"><a href="#home"> Home </a></li>
+                <li class="navItem"><a href="#"> To-Do </a></li>
+                <li class="navItem"><a href="#"> Signup </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 id="mainHeading"> Manage Your Tasks <span style="display: none;"> welcome <span> hello </span> </span> </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil voluptates a animi! Laboriosam eveniet nisi at eius obcaecati deleniti. </p>
+            <button> Learn More </button>
+        </main>
+    </header>
+
+
+    <section id="addToDoSEction">
+        <h1> Your plan for today </h1>
+        <form>
+            <input type="text" placeholder="Add A Todo" />
+            <input type="submit" value="Add To Do">
+        </form>
+    </section>
+
+
+    <section class="signUpForm">
+        <h1> Signup </h1>
+        <form action="">
+            <div>
+                <label for="username"> Username</label>
+                <input id="username" type="text" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email"> Email Address</label>
+                <input id="email" type="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="password"> Password</label>
+                <input id="password" type="password" placeholder="Enter your password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" type="password" placeholder="Confirm your password">
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        
+    </section>
+</body>
+</html>
