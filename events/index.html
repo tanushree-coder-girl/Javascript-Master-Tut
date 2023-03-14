@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+
+    <script src="01.js" defer></script>
+    <script src="02.js" defer></script>
+    <script src="03.js" defer></script>
+
+    <style>
+        .buttons {
+            margin: 2rem 1rem;
+        }
+
+        .buttons button {
+            padding: 1rem 2rem;
+            background-color: rgb(143, 70, 70);
+            outline: none;
+            border: none;
+            border-radius: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Events in js </h1>
+
+    <!-- inline event  -->
+    <button onclick="alert('i am clicked')"> Click me</button>
+
+    <button onclick="myFun()"> onClick Btn </button>
+
+    <button id="myBtn"> My Button </button>
+
+    <button id="myBtn2"> Listen An Event </button>
+
+    <button id="getValueOfThis"> Get value of This </button>
+
+
+    <div class="buttons">
+        <button>Button 1</button>
+        <button> Button 2</button>
+        <button> Button 3</button>
+        <button> Button 4</button>
+    </div>
+</body>
+</html>
