@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling , capturing and delegation </title>
+
+    <!-- <script src="eventBubbleCapture.js" defer></script> -->
+    <script src="./eventDelegation.js" defer></script>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 50%;
+            padding: 100px;
+            cursor: pointer;
+        }
+        .grandparent {
+            background-color: rgb(188, 9, 9);
+
+        }
+        .parent{
+            background-color: yellow;
+
+        } 
+        .child {
+            background-color: rgb(30, 54, 160);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent box">
+        grandparent
+        <div class="parent box">
+            parent
+            <div class="child box">
+                child
+            </div>
+        </div>
+    </div>
+
+    <img src="./bubblingcapturingphase.png" alt="">
+</body>
+</html>
