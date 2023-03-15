@@ -23,6 +23,9 @@
     <!-- <script src="./staticListVSLiveList.js" defer></script> -->
     <!-- <script src="./getBoundingClientRect.js" defer></script> -->
 
+    <!-- after completing event parts using event delegation -->
+    <script src="./toDo.js" defer></script>
+
 </head>
 <body>
     <header class="headerPart myClass">
@@ -45,12 +48,13 @@
 
     <section id="addToDoSEction">
         <h1> Your plan for today </h1>
-        <form>
+        <form id="todoForm">
             <input type="text" placeholder="Add A Todo" />
-            <input type="submit" value="Add To Do">
+            <input type="submit" value="Add To Do"
+            />
         </form>
         <ul class="ListOfTodo">
-            <li> Buy Coffee </li>
+            <!-- <li> Buy Coffee </li> -->
         </ul>
     </section>
 

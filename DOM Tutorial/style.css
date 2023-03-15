@@ -139,4 +139,31 @@ h1 {
     padding: 1rem;
     color: white;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+.todo_btns {
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-btn {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.done {
+    background: green;
+}
+.remove {
+    background: red;
 }
