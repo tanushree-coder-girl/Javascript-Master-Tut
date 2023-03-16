@@ -183,5 +183,10 @@ J)): Asynchronous JavaScript
 22. Consume promises with async and Await 
 23. Split code into multiple files using ES6 modules. 
 
+k)): Debouncing in js 
+
+1. Intro to Debouncing 
+2. Trailing Debouncing 
+3. Leading Debouncing
 
 ============================================= END =========================================
