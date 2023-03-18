@@ -120,3 +120,18 @@ let { program_name, channel, ...rest } = cartoon  //we can use ... rest props or
 
 console.log(program_name, channel);
 console.log(rest)
+
+
+// Object.entries, Object.value
+console.log(Object.entries(cartoon))
+console.log(Object.values(cartoon))
+console.log(Object.keys(cartoon))
+
+// loop using Object.entries 
+Object.entries(cartoon).forEach(([key,value])=>{
+    console.log(key +": " + value)
+})
+
+Object.keys(cartoon).forEach((key)=>{
+    console.log(key +": " + cartoon[key])
+})
